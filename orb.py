@@ -36,7 +36,7 @@ def load_and_resize_image(path, scale=0.4):
     Returns:
         np.ndarray: The resized image.
     """
-    image = cv2.imread(path) # Load the image
+    image = cv2.imread('/Users/anabi/Documents/GitHub/ORB_HW9/images/xpeng2.jpg') # Load the image
     if image is None:
         raise FileNotFoundError(f"Image at path {path} not found.") # Raise an error if the image is not found
     resized_image = cv2.resize(image, (0, 0), fx=scale, fy=scale) # Resize the image
